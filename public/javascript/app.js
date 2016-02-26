@@ -73,7 +73,10 @@ $('.account').on('click', function(){
 // Will close only if back arrow button is clicked.
 $('.accounts-list').on('click','.back', function(){
 
-		    $main.css('background', '');
+			//Clears Main Panel 
+		    $main.css('background','');
+			//Clears Account Panel
+		    $('.account').css('background','');
 			$('.accounts-list').animate({right: "-1250px"}, 1500);
 			view = 0;
 
@@ -89,7 +92,7 @@ $('.accounts-list').on('click','.back', function(){
 
 $('.transactions-list').on('click', '.back-one', function(){
 
-			$(this).css('background', '');
+			$(this).css('background','');
 			$('.transactions-list').animate({right:"-1250px"}, 1500);
 			secondView=0;
 
@@ -99,7 +102,7 @@ $('.transactions-list').on('click', '.back-one', function(){
 //Call if account menu is closed
 function transation(){
 
-			$(this).css('background', '');
+			$(this).css('background','');
 			$('.transactions-list').animate({right:"-1250px"}, 1250);
 			secondView=0;
 			

@@ -78,7 +78,9 @@ $('.accounts-list').on('click','.back', function(){
 			//Clears Main Panel 
 		   
 		   // all class main childrens with divs of class type get cleared once window closes
-		    $('.main').children('.type').css('background', '');
+		    // $('.main').children('.type').css('background', '');
+		    // or
+		    $('.main > .type').css('background','');
 			//Clears Account Panel
 		    $('.account').css('background','');
 			$('.accounts-list').animate({right: "-1250px"}, 1500);
@@ -94,7 +96,7 @@ $('.accounts-list').on('click','.back', function(){
 
 /*Transactions Menu*/
 
-$('.transactions-list').on('click', '.back-one', function(){
+$('.transactions-list').find('.back-one').on('click', function(){
 
 
 			// all class account-list childrens with divs of class account get cleared once window closes

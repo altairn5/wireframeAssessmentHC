@@ -1,9 +1,16 @@
 
 /*Larger Screens*/
 
+*{
+ -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body{
 	background-color: rgba(0, 0, 0, 0.11);
 }
+
+
 
 .home{
   width: 100vw;
@@ -27,6 +34,7 @@ body{
     
 .btn-default.type{
   background: none;
+  max-height: 124px;
 
 }
 
@@ -105,6 +113,8 @@ progress[value]{
   overflow: hidden;
   margin-bottom: 1%
   }
+
+  
 
 .sub-totals{
   display: flex;

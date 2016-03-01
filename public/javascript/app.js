@@ -15,7 +15,9 @@ var mobile = $( window ).width();
 
 $('.type').on('click', function(){
 
+
 	$main = $(this);
+	
 
 	while(view === 0 ){
 
@@ -74,7 +76,9 @@ $('.account').on('click', function(){
 $('.accounts-list').on('click','.back', function(){
 
 			//Clears Main Panel 
-		    $main.css('background','');
+		   
+		   // all class main childrens with divs of class type get cleared once window closes
+		    $('.main').children('.type').css('background', '');
 			//Clears Account Panel
 		    $('.account').css('background','');
 			$('.accounts-list').animate({right: "-1250px"}, 1500);

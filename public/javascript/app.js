@@ -96,7 +96,9 @@ $('.accounts-list').on('click','.back', function(){
 
 $('.transactions-list').on('click', '.back-one', function(){
 
-			$(this).css('background','');
+
+			// all class account-list childrens with divs of class account get cleared once window closes
+			$('.accounts-list').children('.account').css('background', '');
 			$('.transactions-list').animate({right:"-1250px"}, 1500);
 			secondView=0;
 

@@ -80,7 +80,9 @@ $('.accounts-list').on('click','.back', function(){
 		   // all class main childrens with divs of class type get cleared once window closes
 		    // $('.main').children('.type').css('background', '');
 		    // or
-		    $('.main > .type').css('background','');
+		    // $('.main > .type').css('background','');
+
+		    $('label').parents('.type').css('background','');
 			//Clears Account Panel
 		    $('.account').css('background','');
 			$('.accounts-list').animate({right: "-1250px"}, 1500);
@@ -92,6 +94,8 @@ $('.accounts-list').on('click','.back', function(){
 			}
 			
 	})
+
+
 
 
 /*Transactions Menu*/

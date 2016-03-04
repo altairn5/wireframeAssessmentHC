@@ -100,7 +100,7 @@ body{
 
 .p-bar{
 
-     margin-left:13.5%;
+  margin-left:13.5%;
 
     }
 
@@ -114,16 +114,28 @@ progress[value]{
   margin-bottom: 1%
   }
 
-  
 
-.sub-totals{
-  display: flex;
-  padding:0px;
+/*Flexbox*/
+/*flex wrap only apply to container no iteams*/
+/*Justify-content only work on container no items great for nav bars*/
+
+.totals{
+display: flex; 
+flex-wrap: wrap;
+flex-direction:column;
+/*justify-content: center;*/
 }
 
+.sub-totals{
+  flex-direction: row;
+  padding:1%;
+}
+
+
 .sub-totals h5{
-  flex-grow: 1;
-  text-align: right;
+ margin-top:0;
+ float: right;
+
 }
 
 .month{
@@ -212,15 +224,6 @@ progress[value]{
       border-radius: 25px;
         }
 
-    .sub-totals{
-      display: flex;
-      padding:0px;
-    }
-
-    .sub-totals h5{
-      flex-grow: 1;
-      text-align: right;
-    }
 
 /*End @media For Tablets*/
 }
@@ -308,15 +311,6 @@ progress[value]{
 
         }
 
-    .sub-totals{
-      display: flex;
-      padding:0px;
-    }
-
-    .sub-totals h5{
-      flex-grow: 1;
-      text-align: right;
-    }
-
+   
 /*End @media*/
 }

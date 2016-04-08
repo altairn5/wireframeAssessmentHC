@@ -14,7 +14,7 @@ app.use('/scripts', express.static(__dirname + '/node_modules'));
 app.set('view engine', 'ejs');
 
 //Home view
-app.get('*', function (req, res) {
+app.all('*', function (req, res) {
   res.render('index');
 });
 

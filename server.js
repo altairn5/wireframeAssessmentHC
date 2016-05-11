@@ -20,7 +20,7 @@ app.all('*', function (req, res) {
 
 // listen on port 3000
 
-var port = (process.env.port || 5000);
+var port = process.env.port || 3000;
 
 app.listen(port, function() {
   console.log('server started');
